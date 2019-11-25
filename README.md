@@ -11,12 +11,14 @@ public failed: string = "{JSTranslator/Failed}";
 public loading: string = "{JSTranslator/Loading}";
 ```
 Which will be rendered as the proper translation value.
+
 EN:
 ```javascript
 var success = "Success";
 var failed = "Failed";
 var loading = "Loading";
 ```
+
 PT:
 ```javascript
 var success = "Sucesso";
