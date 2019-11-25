@@ -5,7 +5,7 @@ using ScriptBundleTranslator.Config;
 
 namespace ScriptBundleTranslator.Bundling
 {
-    public static class ScripTranslationtBundle
+    public static class ScriptTranslationBundle
     {
         public static List<TranslatedBundle> Create(string virtualPath, params string[] virtualPaths)
         {
