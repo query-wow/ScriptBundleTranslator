@@ -2,6 +2,16 @@
 A simple .NET Script bundling translator that is made in conjuction with the `Microsoft.AspNet.Web.Optimization` bundler package in order to create translated scripts eliminating the need of creating global variables with translation keyvaluepairs.
 These translated bundles are also cached by language, this means they won't be regenerated again, unless they change in the source code.
 
+### How to add this to my project ###
+Simple check the [Configuration Samples](https://github.com/queryjs/ScriptBundleTranslator/tree/master/ScriptBundleTranslator/ConfigExamples) and add them to your project. 
+Then on the MVC's `BundleConfig.cs`  simple call the bundler as shown down below.
+
+```csharp
+  bundles.AddRange(ScripTranslationtBundle.Create("~/bundles/general", "~/Scripts/General/General.js"));
+```
+
+This will create bundles for all the avaiable cultures inside your CultureSettings configuration.
+
 ### How to use ###
 Use in between curly brackers the name of your resource file (.resx) and with a slash (/) name the key you want to use.
 
@@ -24,4 +34,10 @@ PT:
 var success = "Sucesso";
 var failed = "Falhou";
 var loading = "A Carregar";
+```
+
+Call the script on a razor page via
+
+```csharp
+	@ScriptBundleTranslator.Mvc.HtmlHelpers.LocalizedJsBundle("~/bundles/general")
 ```
