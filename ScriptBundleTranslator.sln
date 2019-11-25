@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptBundleTranslator", "ScriptBundleTranslator\ScriptBundleTranslator.csproj", "{F4760221-A4CD-45DC-B89C-82604263EA81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptBundleTranslator.NuGet", "ScriptBundleTranslator.NuGet\ScriptBundleTranslator.NuGet.csproj", "{CDAC3984-88E3-4E8C-A785-4DF1CA0522D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F4760221-A4CD-45DC-B89C-82604263EA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4760221-A4CD-45DC-B89C-82604263EA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4760221-A4CD-45DC-B89C-82604263EA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDAC3984-88E3-4E8C-A785-4DF1CA0522D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAC3984-88E3-4E8C-A785-4DF1CA0522D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAC3984-88E3-4E8C-A785-4DF1CA0522D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAC3984-88E3-4E8C-A785-4DF1CA0522D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScriptBundleTranslator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Javascript Bundler Translator")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Janela Digital")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ScriptBundleTranslator")]
-[assembly: AssemblyCopyright("Copyright © Janela Digital 2019")]
+[assembly: AssemblyCopyright("Copyright © Telmo Rodrigues 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
