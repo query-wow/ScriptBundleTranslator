@@ -1,8 +1,8 @@
-﻿using System.Threading;
+using System.Threading;
 using System.Web;
 using System.Web.Optimization;
 
-namespace TFramework.Mvc
+namespace ScriptBundleTranslator.Mvc
 {
     public class HtmlHelpers
     {
