@@ -47,7 +47,6 @@
     <Content Include="nuget.exe" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ScriptBundleTranslator.1.0.0.nupkg" />
     <None Include="ScriptBundleTranslator.NuGet.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
