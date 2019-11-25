@@ -13,7 +13,7 @@ Simple check the [Configuration Samples](https://github.com/query-js/ScriptBundl
 Then on the MVC's `BundleConfig.cs`  simple call the bundler as shown down below.
 
 ```csharp
-bundles.AddRange(ScripTranslationtBundle.Create("~/bundles/general", "~/Scripts/General/General.js"));
+bundles.AddRange(ScriptTranslationBundle.Create("~/bundles/general", "~/Scripts/General/General.js"));
 ```
 
 This will create bundles for all the avaiable cultures inside your CultureSettings configuration.
