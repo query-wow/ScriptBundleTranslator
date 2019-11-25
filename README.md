@@ -39,5 +39,5 @@ var loading = "A Carregar";
 Call the script on a razor page via
 
 ```csharp
-	@ScriptBundleTranslator.Mvc.HtmlHelpers.LocalizedJsBundle("~/bundles/general")
+@ScriptBundleTranslator.Mvc.HtmlHelpers.LocalizedJsBundle("~/bundles/general")
 ```
