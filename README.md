@@ -1,4 +1,9 @@
 # ScriptBundleTranslator
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
 A simple .NET Script bundling translator, created to easily communicate with the `ResourceManager` class and it's made in conjuction with the `Microsoft.AspNet.Web.Optimization` bundler package in order to create translated scripts eliminating the need of creating global variables with translation keyvaluepairs.
 These translated bundles are also cached by language, this means they won't be regenerated again, unless they change in the source code.
 
