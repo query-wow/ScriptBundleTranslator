@@ -3,7 +3,7 @@ A simple .NET Script bundling translator that is made in conjuction with the `Mi
 These translated bundles are also cached by language, this means they won't be regenerated again, unless they change in the source code.
 
 ### How to add this to my project ###
-Simple check the [Configuration Samples](https://github.com/queryjs/ScriptBundleTranslator/tree/master/ScriptBundleTranslator/ConfigExamples) and add them to your project. 
+Simple check the [Configuration Samples](https://github.com/query-js/ScriptBundleTranslator/tree/master/ScriptBundleTranslator/ConfigExamples) and add them to your project. 
 Then on the MVC's `BundleConfig.cs`  simple call the bundler as shown down below.
 
 ```csharp
