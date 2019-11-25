@@ -1,5 +1,5 @@
 # ScriptBundleTranslator
-A simple .NET Script bundling translator that is made in conjuction with the `Microsoft.AspNet.Web.Optimization` bundler package in order to create translated scripts eliminating the need of creating global variables with translation keyvaluepairs.
+A simple .NET Script bundling translator, created to easily communicate with the `ResourceManager` class and it's made in conjuction with the `Microsoft.AspNet.Web.Optimization` bundler package in order to create translated scripts eliminating the need of creating global variables with translation keyvaluepairs.
 These translated bundles are also cached by language, this means they won't be regenerated again, unless they change in the source code.
 
 ### How to add this to my project ###
@@ -41,3 +41,8 @@ Call the script on a razor page via
 ```csharp
 @ScriptBundleTranslator.Mvc.HtmlHelpers.LocalizedJsBundle("~/bundles/general")
 ```
+
+## Dependencies ##
+- Microsoft.AspNet.Web.Optimization
+- Microsoft.Web.Infrastructure (>= 1.0.0)
+- WebGrease (>= 1.5.2)
