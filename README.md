@@ -1,5 +1,5 @@
 # ScriptBundleTranslator
-
+[![CodeFactor](https://www.codefactor.io/repository/github/query-js/scriptbundletranslator/badge)](https://www.codefactor.io/repository/github/query-js/scriptbundletranslator)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
