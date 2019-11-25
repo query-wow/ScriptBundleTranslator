@@ -31,34 +31,4 @@ namespace ScriptBundleTranslator.Config
         [ConfigurationProperty("IgnoreFiles", IsDefaultCollection = true)]
         public IgnoreScriptElementCollection IgnoreScriptCollection => (IgnoreScriptElementCollection)base["IgnoreFiles"];
     }
-
-    [ConfigurationCollection(typeof(IgnoreScriptElement), AddItemName = "add")]
-    public class IgnoreScriptElementCollection : ConfigurationElementCollection
-    {
-        protected override ConfigurationElement CreateNewElement()
-        {
-            return new IgnoreScriptElement();
-        }
-
-        protected override object GetElementKey(ConfigurationElement element)
-        {
-            if (element == null)
-            {
-                throw new ArgumentNullException("element");
-            }
-
-            return ((IgnoreScriptElement)element).Path;
-        }
-
-        public bool ContainsKey(string path)
-        {
-            return Array.ConvertAll(BaseGetAllKeys(), x => x.ToString()).Contains(path);
-        }
-    }
-
-    public class IgnoreScriptElement : ConfigurationElement
-    {
-        [ConfigurationProperty("Path", IsKey = true, IsRequired = true)]
-        public string Path => (string)base["Path"];
-    }
 }

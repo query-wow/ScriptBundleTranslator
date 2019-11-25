@@ -61,6 +61,8 @@
     <Compile Include="Config\CultureElement.cs" />
     <Compile Include="Config\CultureElementCollection.cs" />
     <Compile Include="Config\CultureSettings.cs" />
+    <Compile Include="Config\IgnoreScriptElement.cs" />
+    <Compile Include="Config\IgnoreScriptElementCollection.cs" />
     <Compile Include="Config\ScriptTranslatorSettings.cs" />
     <Compile Include="Extensions\BundlerExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
