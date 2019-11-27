@@ -1,6 +1,8 @@
 # ScriptBundleTranslator
 [![CodeFactor](https://www.codefactor.io/repository/github/query-js/scriptbundletranslator/badge)](https://www.codefactor.io/repository/github/query-js/scriptbundletranslator)
 [![NuGet Badge](https://buildstats.info/nuget/ScriptBundleTranslator?includePreReleases=true)](https://www.nuget.org/packages/ScriptBundleTranslator/)
+[![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/)
+[![HitCount](http://hits.dwyl.io/query-js/ScriptBundleTranslator.svg)](http://hits.dwyl.io/query-js/ScriptBundleTranslator)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
