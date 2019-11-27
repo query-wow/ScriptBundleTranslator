@@ -16,17 +16,13 @@ namespace ScriptBundleTranslator.Bundling
         public string BuildBundleContent(Bundle bundle, BundleContext context, IEnumerable<BundleFile> files)
         {
             if (files == null)
-            {
                 return string.Empty;
-            }
+
             if (context == null)
-            {
                 throw new ArgumentNullException("context");
-            }
+
             if (bundle == null)
-            {
                 throw new ArgumentNullException("bundle");
-            }
 
             StringBuilder stringBuilder = new StringBuilder();
 
@@ -56,9 +52,7 @@ namespace ScriptBundleTranslator.Bundling
             }
 
             if (text2 == null || context.EnableInstrumentation)
-            {
                 text2 = Environment.NewLine;
-            }
 
             foreach (BundleFile file in files)
             {
@@ -86,9 +80,7 @@ namespace ScriptBundleTranslator.Bundling
         private static string GetFileHeader(VirtualFile file, string fileHeaderFormat)
         {
             if (string.IsNullOrEmpty(fileHeaderFormat))
-            {
                 return string.Empty;
-            }
 
             string applicationPath = GetApplicationPath(HostingEnvironment.VirtualPathProvider);
             return string.Format(CultureInfo.InvariantCulture, fileHeaderFormat, new object[1]
@@ -105,10 +97,10 @@ namespace ScriptBundleTranslator.Bundling
         private static string ConvertToAppRelativePath(string appPath, string fullName)
         {
             if (string.Equals("/", appPath, StringComparison.OrdinalIgnoreCase))
-            {
                 return fullName;
-            }
+
             string text = (string.IsNullOrEmpty(appPath) || !fullName.StartsWith(appPath, StringComparison.OrdinalIgnoreCase)) ? fullName : fullName.Replace(appPath, "~/");
+
             return text.Replace('\\', '/');
         }
 
@@ -118,10 +110,9 @@ namespace ScriptBundleTranslator.Bundling
             {
                 VirtualDirectory directory = vpp.GetDirectory("~");
                 if (directory != null)
-                {
                     return directory.VirtualPath;
-                }
             }
+
             return null;
         }
 
@@ -156,7 +147,7 @@ namespace ScriptBundleTranslator.Bundling
 
         #region Localization
 
-        private static Regex _regex = new Regex(@"{(.*[a-z]\/.*[a-z])}", RegexOptions.Compiled);
+        private static readonly Regex _regex = new Regex(@"{(.*[a-z]\/.*[a-z])}", RegexOptions.Compiled);
 
         /// <summary>
         /// Translates the text keys in the script file. The format is {key}.
@@ -176,13 +167,9 @@ namespace ScriptBundleTranslator.Bundling
                 string key = args[1];
                 string translatedString = manager.GetString(key);
                 if (!string.IsNullOrEmpty(translatedString))
-                {
                     text = text.Replace(match.Value, CleanText(translatedString));
-                }
                 else
-                {
                     throw new ArgumentNullException($"Couldn't find translation for key: {key}");
-                }
             }
 
             return text;
@@ -195,7 +182,6 @@ namespace ScriptBundleTranslator.Bundling
         {
             text = text.Replace("'", "\\'");
             text = text.Replace("\\", "\\\\");
-
             return text;
         }
 
