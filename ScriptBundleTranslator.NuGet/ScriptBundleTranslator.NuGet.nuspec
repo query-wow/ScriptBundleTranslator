@@ -14,4 +14,7 @@
     <copyright>Copyright 2020</copyright>
     <tags>globalization, translation, i18n, bundling</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\*.*" target="lib/net45" />
+  </files>
 </package>
