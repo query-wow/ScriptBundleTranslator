@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
+    <id>ScriptBundleTranslator</id>
+    <version>1.0.3</version>
+    <title>ScriptBundleTranslator</title>
+    <authors>Telmo Rodrigues</authors>
     <dependencies>
       <dependency id="Antlr" version="3.5.0.2" />
       <dependency id="Microsoft.AspNet.Web.Optimization" version="1.1.3" />
       <dependency id="Newtonsoft.Json" version="12.0.3" />
       <dependency id="WebGrease" version="1.6.0" />
     </dependencies>
-    <owners>$author$</owners>
+    <owners>Telmo Rodrigues</owners>
     <licenseUrl>https://github.com/query-js/ScriptBundleTranslator/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/query-js/ScriptBundleTranslator</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <description>Translates Javascript bundles on runtime</description>
+    <releaseNotes>Fixed config errors.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
     <tags>i18n JavaScript, translations, bundles, optimization</tags>
   </metadata>
 </package>
