@@ -12,7 +12,7 @@ namespace ScriptBundleTranslator.Config
             {
                 if (_s == null)
                 {
-                    _s = (ScriptTranslatorSettings)ConfigurationManager.GetSection("ScriptBundleTranslator/Settings");
+                    _s = (ScriptTranslatorSettings)ConfigurationManager.GetSection("ScriptTranslatorSettings/Settings");
                 }
 
                 return _s;

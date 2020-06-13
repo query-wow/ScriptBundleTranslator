@@ -11,7 +11,7 @@ namespace ScriptBundleTranslator.Config
             {
                 if (_s == null)
                 {
-                    _s = (CultureSettings)ConfigurationManager.GetSection("ScriptBundleTranslator/Cultures");
+                    _s = (CultureSettings)ConfigurationManager.GetSection("ScriptTranslatorSettings/Cultures");
                 }
 
                 return _s;
